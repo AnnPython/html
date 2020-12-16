@@ -1,0 +1,24 @@
+<html>
+<head>
+<body>
+% for i in val:
+<table cellspacing="2" border="1" cellpadding="5">    
+	<caption>Информация о посещении</caption>         
+	<tr>
+        <th><font color="red">Время посещения</font></th>
+        <th><font color="navy">${i[2]}</font></th>
+        </tr>
+        <tr>
+         <td>Ссылка</td>
+        
+         <td><a href="${i[0]}">${i[0]}</a>${i[1]}</td>
+         
+     
+        </tr>
+</table>
+  
+ 
+%endfor		  
+</body>
+</head>
+</html>
